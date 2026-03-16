@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navWrapperce">
+      <ul class="navMenu">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="studio.html">Photostudio</a></li>
+      </ul>
+    </div>
+    <h1>My Personal Profile</h1>
+    <p>Name: Kris</p>
+    <p>Age: 24</p>
+    <p>Occupation: Student</p>
+    <img
+      src="https://pbs.twimg.com/profile_images/2003803826801852416/OKY8-uLr_400x400.jpg"
+      alt="Profile Picture"
+      width="200"
+      height="200"
+    />
+
+    <ul>
+      <li>
+        Hobbies: Coding, Gaming, Reading Books, Reading Mangas, Anime, Movies,
+        Hiking, Skiing, etc....
+      </li>
+      <li>Favorite Colors: Lime, Blue, Cyan</li>
+      <li>Favorite Cuisine: Pizza, Lahmacun, Trilece itn</li>
+    </ul>
+    <a href="https://github.com/krisgfx9" target="_blank">Github</a>
+    <table border="1">
+      <tr>
+        <th>Anime</th>
+        <th>Movies</th>
+        <th>Games</th>
+      </tr>
+      <tr>
+        <td>Code Geass</td>
+        <td>Avengers</td>
+        <td>League of Legends</td>
+      </tr>
+      <tr>
+        <td>Naruto</td>
+        <td>Spider-Man</td>
+        <td>Counter-Strike</td>
+      </tr>
+    </table>
+    <br />
+
+    <button onclick="showForm()">Contact</button>
+
+    <form id="formicka" style="display: none">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function showForm() {
+        document.getElementById("formicka").style.display = "block";
+      }
+    </script>
+
+    <audio autoplay loop id="bgMusic">
+      <source
+        src="3 Minute Spring Timer with Relaxing LoFi Music.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script>
+      const music = document.getElementById("bgMusic");
+      music.volume = 0.2;
+    </script>
+  </body>
+</html>
